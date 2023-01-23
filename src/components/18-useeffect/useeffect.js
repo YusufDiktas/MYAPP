@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Button } from 'react-bootstrap';
 
-const UseEffect1 = ({id}) => {
+const UseEffect = ({id}) => {
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
-
-    { /*  !!!!!STRICT MODE DEVREDEYKEN useEffect kodları ikişer defa çağrılaiblir.
-               ÇAĞRILMAMASI GEREKEN UNMOUNTING ÇAĞRILABILIR
-               STRICT MODE SADECE DEVLEOPMENT ORTAMINDA TESİRLİDİR !!!!!!!!! */}
 
 
     console.log(`Bu satır render ve re-render durumlarında ve 
@@ -56,4 +52,4 @@ const UseEffect1 = ({id}) => {
   )
 }
 
-export default UseEffect1
+export default UseEffect
